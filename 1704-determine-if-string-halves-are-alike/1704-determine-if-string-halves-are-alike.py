@@ -1,6 +1,6 @@
 class Solution:
     def halvesAreAlike(self, s: str) -> bool:
-        s.lower()
+        
         n=len(s)
         l=int(n/2)
         v= ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
