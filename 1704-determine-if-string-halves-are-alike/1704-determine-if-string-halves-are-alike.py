@@ -1,9 +1,9 @@
 class Solution:
     def halvesAreAlike(self, s: str) -> bool:
-        
+        s=s.lower()
         n=len(s)
         l=int(n/2)
-        v= ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+        v= ['a', 'e', 'i', 'o', 'u']
         a=[i for i in s]
         c=0
         d=0
