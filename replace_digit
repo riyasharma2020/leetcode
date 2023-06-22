@@ -1,0 +1,8 @@
+num=105671
+num=str(num)
+a=[i for i in num]
+b=[]
+for i in a:
+    b.append(9-int(i))
+for i in b:
+    print(i,end="")
