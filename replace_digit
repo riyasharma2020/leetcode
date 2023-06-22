@@ -1,8 +1,15 @@
-num=105671
-num=str(num)
-a=[i for i in num]
-b=[]
-for i in a:
-    b.append(9-int(i))
-for i in b:
-    print(i,end="")
+def series( num: int)-> str:
+    s=""
+    if (num==-1):
+        return("wrong input")
+    num=str(num)
+    a=[i for i in num]
+    b=[]
+    for i in a:
+        b.append(9-int(i))
+    for i in b:
+        s+=str(i)
+    return(s)
+    
+num=input()
+print(series(num))
