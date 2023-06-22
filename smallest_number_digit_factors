@@ -1,0 +1,11 @@
+num=612
+a=[]
+if(num>=10):
+    for i in range(9,1,-1):
+        while(num%i==0):
+            num=num/i
+            a.append(i)
+else:
+    a.append(1)
+    a.append(num)
+print(a.sort())
