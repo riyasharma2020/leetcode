@@ -1,0 +1,15 @@
+
+def subarray_check(a,n,num)->bool:
+    p=len(a)-n
+    for i in range(0,p+1,n):
+        q=a[i:i+3]
+        if num not in q:
+            return(False)
+    return(True)
+    
+a=[1,2,3,4,5,1,6,7,1]
+n=3
+num=1
+
+
+print(subarray_check(a,n,num))
