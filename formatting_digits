@@ -1,0 +1,20 @@
+
+x=99
+y=1000
+b=[]
+n=len(str(y))
+num=""
+for i in range(n-1):
+    num+="9"
+for i in range(x,y+1):
+    if i<=int(num):
+        k="0"+str(i)
+        while(len(k)!=len(num)+1 ):
+            k="0"+k
+        b.append(k)
+    else:
+        b.append(str(i))
+print(b)
+
+    
+    
