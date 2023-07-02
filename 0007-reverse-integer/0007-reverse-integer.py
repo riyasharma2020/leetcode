@@ -12,8 +12,8 @@ class Solution(object):
         while x>0:
             a=a*10+(x%10)
             x=int(x/10)
-            print(a)
-        if a>2**31:
+        
+        if a>2147483648:
             return (0)
         else:
             return(a*k)
